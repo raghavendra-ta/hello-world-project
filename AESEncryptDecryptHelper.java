@@ -50,7 +50,7 @@ public class CryptoHelper {
 private IvParameterSpec getIvSpec() throws FileNotFoundException, IOException{
 		
 		IvParameterSpec ivspec = null;
-		String ivFile = "/store/auth/analytics.rt";
+		String ivFile = "/tmp/ivstore.dat";
 		File ivf = new File(ivFile);
 		if(ivf.exists()) {
 			byte[] iv = null;
